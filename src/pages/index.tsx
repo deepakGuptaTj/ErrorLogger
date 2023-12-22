@@ -1468,7 +1468,7 @@ const Home: NextPage = (props: any) => (
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const errorListUrl =
-    "https://d1crms.tractorfirst.com/api/valaution/errors/get";
+    "https://crms.tractorjunction.com/api/valaution/errors/get";
   let page = 1;
   if (context.query?.page && typeof context.query.page === "string") {
     page = parseInt(context.query.page, 10);
